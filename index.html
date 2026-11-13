@@ -3,52 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gowreddy Supraja | Data Science</title>
+<title>Gowreddy Supraja | Portfolio</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:#f8f9ff;color:#333}
-header{background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;padding:60px 20px;text-align:center}
-header img{width:150px;height:150px;object-fit:cover;border-radius:50%;border:4px solid white;box-shadow:0 4px 15px rgba(0,0,0,.3)}
-header h1{font-size:42px;margin-top:15px}
-header p{font-size:18px;margin-top:8px}
-.btn{display:inline-block;background:white;color:#2575fc;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:bold;margin:15px 8px}
-section{max-width:900px;margin:auto;padding:40px 20px}
-h2{color:#2575fc;margin-bottom:15px;font-size:26px}
-.card{background:#fff;border:1px solid #dbe4ff;padding:20px;border-radius:15px;margin-bottom:15px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
-.card a{color:#2575fc;font-weight:bold;text-decoration:none;margin-right:15px}
-.skills span{display:inline-block;background:#e7edff;padding:8px 14px;border-radius:20px;margin:5px;font-size:14px}
-footer{background:#222;color:white;text-align:center;padding:20px}
-footer a{color:#8ab4ff;text-decoration:none}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#101010;color:#f5f5f5;line-height:1.7}
+header{position:sticky;top:0;background:#151515;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.logo{font-size:25px;color:#c6a6ff;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
+nav a:hover{color:#c6a6ff}
+section{padding:85px 10%}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.tag{color:#c6a6ff;letter-spacing:2px;font-size:13px}
+h1{font-size:55px;line-height:1.2;margin:18px 0}
+h1 span{color:#c6a6ff}
+.hero p,.about p{color:#bbb;max-width:600px}
+.btn{display:inline-block;margin:25px 12px 0 0;padding:12px 23px;background:#c6a6ff;color:#17121f;text-decoration:none;border-radius:5px;font-weight:bold}
+.btn.outline{background:transparent;color:#c6a6ff;border:1px solid #c6a6ff}
+.photo{width:260px;height:300px;object-fit:cover;border-radius:12px;border:2px solid #c6a6ff}
+h2{font-size:32px;margin-bottom:25px}
+h2 span{color:#c6a6ff}
+.sub{color:#c6a6ff;letter-spacing:2px;font-size:12px}
+.card{background:#1b1b1b;padding:25px;border-radius:12px;border:1px solid #333;margin:15px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.card h3{color:#c6a6ff;margin-bottom:10px}
+.card p{color:#bbb}
+footer{text-align:center;padding:30px;background:#151515;color:#aaa}
+a{transition:.2s}
+@media(max-width:700px){
+ header{flex-direction:column;gap:12px}
+ nav a{margin:0 7px;font-size:12px}
+ .hero{flex-direction:column-reverse;text-align:center;padding-top:55px}
+ h1{font-size:38px}
+ .photo{width:210px;height:230px}
+ section{padding:65px 7%}
+}
 </style>
 </head>
 <body>
 
 <header>
-<img src="supraja.jpg" alt="Gowreddy Supraja">
-<h1>Gowreddy Supraja</h1>
-<p>Data Science Student | Aspiring Data Analyst</p>
-<p>I love finding stories hidden in data and turning numbers into insights.</p>
-<a class="btn" href="https://www.linkedin.com/in/supraja-supraja-a85909303" target="_blank">LinkedIn</a>
-<a class="btn" href="https://supraja-sgp.github.io/" target="_blank">My Website</a>
-<a class="btn" href="mailto:gowreddysupraja@gmail.com">Contact Me</a>
+ <div class="logo">S.</div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+ </nav>
 </header>
 
-<section>
-<h2>About Me</h2>
-<p>Hello! I'm Supraja from Tirupati. I'm a Data Science student passionate about Python, Data Analysis and Machine Learning. I enjoy working with datasets, finding patterns and building dashboards that help in decision making.</p>
+<section class="hero" id="home">
+ <div>
+  <div class="tag">OPEN TO INTERNSHIP OPPORTUNITIES</div>
+  <h1>Hi, I'm <span>Gowreddy Supraja.</span></h1>
+  <h2 style="font-size:25px">Aspiring Data Analyst</h2>
+  <p>I am a Computer Science and Design student passionate about data analytics, machine learning and software development. I enjoy learning new technologies and solving real-world problems.</p>
+  <a class="btn" href="#projects">Explore My Work</a>
+  <a class="btn outline" href="#contact">Contact Me</a>
+  <p style="margin-top:25px">Chittoor, Andhra Pradesh · B.Tech 2027</p>
+ </div>
+ <img class="photo" src="profile.jpg" alt="Gowreddy Supraja">
 </section>
 
-<section>
-<h2>Skills</h2>
-<div class="skills">
-<span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>Machine Learning</span><span>Git & GitHub</span>
-</div>
+<section id="about" class="about">
+ <div class="sub">01 / ABOUT ME</div>
+ <h2>Turning curiosity into <span>creation.</span></h2>
+ <p>I am Gowreddy Supraja, pursuing B.Tech in Computer Science and Design at Sri Venkateswara College of Engineering and Technology. I am interested in data analytics, data engineering and machine learning. I believe in continuous learning and improving my technical skills through practical experience.</p>
+ <div class="grid" style="margin-top:25px">
+  <div class="card"><h3>2027</h3>Graduating Batch</div>
+  <div class="card"><h3>8.0</h3>CGPA</div>
+  <div class="card"><h3>∞</h3>Curiosity to Learn</div>
+ </div>
 </section>
 
-<section>
-<h2>Projects</h2>
-<div class="card">
-<h3>📊 Student Performance Analysis</h3>
-<p>Analyzed student marks data using Python, Pandas & Matplotlib to find factors affecting performance. Created visualizations and insights.</p><br>
-<a href="https://supraja-sgp.github.io/" target="_blank">🔗 Live Demo</a>
-<a href="https://github.com/supraja-sgp" target="_blank
+<section id="skills">
+ <div class="sub">02 / MY TOOLKIT</div>
+ <h2>Technical <span>Skills</span></h2>
+ <div class="grid">
+  <div class="card"><h3>Programming</h3><p>Python · Java</p></div>
+  <div class="card"><h3>Web Development</h3><p>HTML · CSS · JavaScript</p></div>
+  <div class="card"><h3>Data Skills</h3><p>SQL · Excel · Power BI</p></div>
+  <div class="card"><h3>Core Interest</h3><p>Machine Learning · Data Analytics</p></div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="sub">03 / SELECTED WORK</div>
+ <h2>My <span>Projects</span></h2>
+ <div class="card">
+  <h3>Detect Fraudulent Job Advertisements Using Machine Learning</h3>
+  <p>An academic project focused on identifying potentially fraudulent job advertisements using machine learning techniques.</p>
+  <p style="margin-top:12px">Area: Machine Learning · Fraud Detection</p>
+ </div>
+</section>
+
+<section id="education">
+ <div class="sub">04 / EDUCATION & EXPERIENCE</div>
+ <h2>My <span>Journey</span></h2>
+ <div class="card">
+  <h3>B.Tech – Computer Science and Design</h3>
+  <p>Sri Venkateswara College of Engineering and Technology, Chittoor</p>
+  <p>2023 – 2027 · CGPA: 8.0</p>
+ </div>
+ <div class="card">
+  <h3>Internship – Blackbucks Academy</h3>
+  <p>Data Engineering and Analytics</p>
+  <p>Online Internship</p>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="sub">05 / GET IN TOUCH</div>
+ <h2>Let's <span>Connect.</span></h2>
+ <p>I'm interested in learning, internships and opportunities to grow my technical skills.</p>
+ <div class="card">
+  <p>Email: <a href="mailto:gowreddysupraja@gmail.com">gowreddysupraja@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/supraja-supraja-a85909303" target="_blank">Visit Profile</a></p>
+  <p>GitHub: <a href="https://github.com/Supraja-sgp" target="_blank">Visit GitHub</a></p>
+ </div>
+</section>
+
+<footer>
+ © 2026 Gowreddy Supraja · Designed with passion.
+</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+ link.addEventListener('click',()=>{
+  document.querySelectorAll('nav a').forEach(a=>a.style.color='white');
+  link.style.color='#c6a6ff';
+ });
+});
+</script>
+</body>
+</html>
